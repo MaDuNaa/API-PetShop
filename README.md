@@ -140,9 +140,8 @@ etc...
 
 ![Swagger projeto](https://user-images.githubusercontent.com/97975671/182435081-182d6a79-e604-4264-93e4-4df64ed4ba2b.PNG)
 
-< div align = "centro" >
-< img src = "https://user-images.githubusercontent.com/97975671/182435037-f7bc03fb-77bb-4fa9-8895-f9010fee313d.PNG" />
-</ div >
+![Postman Projeto](https://user-images.githubusercontent.com/97975671/182435037-f7bc03fb-77bb-4fa9-8895-f9010fee313d.PNG)
+
 
 ----------------------------------------------------------------------------------------------
 ## Autor
