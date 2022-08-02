@@ -1,0 +1,933 @@
+{
+	"info": {
+		"_postman_id": "9334910c-ef5e-4bae-9378-4f7506fa896c",
+		"name": "Sistema Pet Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21093246"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Buscar todos os clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/clientes",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar um cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Max\",\r\n    \"telefone\": \"1599602587\",\r\n    \"email\": \"max000@hotmail.com\",\r\n    \"endereco\" : {\r\n        \"logradouro\": \"Rua Dantas\",\r\n        \"numero\" : \"789\",\r\n        \"complemento\": \"Casa de Fundo\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/clientes",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/clientes/5",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"clientes",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"nome\": \"joao\",\r\n    \"telefone\": \"1599602587\",\r\n    \"email\": \"max000@hotmail.com\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Rua Dantas\",\r\n        \"numero\": \"789\",\r\n        \"complemento\": \"Casa de Fundo\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/clientes/2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Cliente ",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/clientes/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medicos Veterinarios",
+			"item": [
+				{
+					"name": "Buscar todos os medicos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/medicos",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar um medico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Dr. Joao\",\r\n    \"telefone\": \"1599602587\",\r\n    \"email\": \"Dr.Joao@hotmail.com\",\r\n    \"endereco\" : {\r\n        \"logradouro\": \"Rua Nazare\",\r\n        \"numero\" : \"789\",\r\n        \"complemento\": \"Apartamento\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/medicos",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um Medico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/medicos/5",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"medicos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar um Medico",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Dr. Joao Dantas\",\r\n    \"telefone\": \"1599602587\",\r\n    \"email\": \"Dr.Joao@hotmail.com\",\r\n    \"endereco\" : {\r\n        \"logradouro\": \"Rua Nazare\",\r\n        \"numero\" : \"789\",\r\n        \"complemento\": \"Apartamento\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/medicos/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"medicos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Medico",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/medicos/5",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"medicos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cachorro",
+			"item": [
+				{
+					"name": "Buscar todos os Cachorros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/cachorros",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cachorros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar um cachorro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigoCliente\": 4,\r\n  \"especie\": \"OK\",\r\n  \"nome\": \"toquinho\",\r\n  \"raca\": \"salcicha\",\r\n  \"vacina\": \"tudo ok\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cachorros",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cachorros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um cachorro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/cachorros/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cachorros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar um cachorro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigoCliente\": 1,\r\n  \"especie\": \"emdia\",\r\n  \"nome\": \"toquinho\",\r\n  \"raca\": \"salcicha\",\r\n  \"vacina\": \"tudo ok\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/cachorros/5",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cachorros",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Cachorro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/cachorros/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"cachorros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Atendimento",
+			"item": [
+				{
+					"name": "Buscar todos os atendimentos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/atendimentos",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar um novo atendimento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigoCachorro\": 2,\r\n  \"codigoCliente\": 3,\r\n  \"codigoMedico\": 1,\r\n  \"comentarios\": \"oi\",\r\n  \"dadosAnimal\": \"ok\",\r\n  \"diagnostico\": \"ala\",\r\n  \"localdatatime\": \"12/11/2002 12:15:11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/atendimentos",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um atendimento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/atendimentos/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar um atendimento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigoCachorro\": 3,\r\n  \"codigoCliente\": 3,\r\n  \"codigoMedico\": 3,\r\n  \"comentarios\": \"kkkkkkkkkkk\",\r\n  \"dadosAnimal\": \"ok\",\r\n  \"diagnostico\": \"ala\",\r\n  \"localdatatime\": \"12/11/2002 12:15:11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/atendimentos/4",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir atendimento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/atendimentos/2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Security",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"math@gmail.com\",\r\n    \"senha\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/auth",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar novo Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"testkkkk2hotmail.com\",\r\n  \"perfilId\": 2,\r\n  \"senha\": \"7894\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/usuarios",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Raca",
+			"item": [
+				{
+					"name": "Buscar raca id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/racas/busca/5",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"racas",
+								"busca",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar raca por nome",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/racas/busca/porNome?nome=Akita",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"racas",
+								"busca",
+								"porNome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Akita"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todas as racas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/racas/busca/todas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"racas",
+								"busca",
+								"todas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Historico",
+			"item": [
+				{
+					"name": "Buscar todos os historicos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/historicos",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"historicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar historico por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/historicos/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"historicos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gato",
+			"item": [
+				{
+					"name": "Buscar todos os Gatos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/gatos",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"gatos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar um gato",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigoCliente\": 1,\r\n  \"nome\": \"oi\",\r\n  \"raca\": \"kkkk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/gatos",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"gatos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um gato",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/gatos/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"gatos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar um gato",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigoCliente\": 1,\r\n  \"nome\": \"9\",\r\n  \"raca\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/gatos/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"gatos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir gato",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/gatos/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"gatos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Raca Gato",
+			"item": [
+				{
+					"name": "Buscar raca gato id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/racasgatos/busca/abys",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"racasgatos",
+								"busca",
+								"abys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar raca gato por nome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/racasgatos/busca/porNome?nome=Abyssinian",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"racasgatos",
+								"busca",
+								"porNome"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Abyssinian"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todas as racas gato",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/racasgatos/busca/todas",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"racasgatos",
+								"busca",
+								"todas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Atendimento Gato",
+			"item": [
+				{
+					"name": "Buscar todos os atendimentos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/atendimentosgatos",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentosgatos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar um atendimento gato",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigoCliente\": 1,\r\n  \"codigoGato\": 2,\r\n  \"codigoMedico\": 3,\r\n  \"comentarios\": \"kkkkk\",\r\n  \"dadosAnimal\": \"kkkk\",\r\n  \"diagnostico\": \"kkkkk\",\r\n  \"localdatatime\": \"11/15/2001 15:10:11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/atendimentosgatos",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentosgatos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar um atendimento gato",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/atendimentosgatos/2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentosgatos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar atendimento gato",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigoCliente\": 0,\r\n  \"codigoGato\": 0,\r\n  \"codigoMedico\": 0,\r\n  \"comentarios\": \"string\",\r\n  \"dadosAnimal\": \"string\",\r\n  \"diagnostico\": \"string\",\r\n  \"localdatatime\": \"dd/MM/yyyy HH:mm:ss\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/atendimentosgatos/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentosgatos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir um atendimento Gato",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/atendimentosgatos/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"atendimentosgatos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1 @@
+ALTER TABLE cliente RENAME TO tb_cliente;

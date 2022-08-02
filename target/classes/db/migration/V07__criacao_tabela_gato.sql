@@ -1,0 +1,6 @@
+CREATE TABLE tb_gato (
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(255) NOT NULL,
+raca VARCHAR(255) NOT NULL,
+cliente_id BIGINT ,
+FOREIGN KEY (cliente_id) REFERENCES tb_cliente(id) );
