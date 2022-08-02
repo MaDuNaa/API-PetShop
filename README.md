@@ -128,23 +128,22 @@ etc...
 
 ## UMLs que fiz para seguir de base (alguns)
 
-![uml_-API-1](/uploads/2687f8501593428bf238ad80b4fdd25f/uml_-API-1.PNG)
+![uml -API-1](https://user-images.githubusercontent.com/97975671/182435102-17eceb3e-4c8f-4035-838a-f53aebf5ee76.PNG)
 
-
-![UML-API-2](/uploads/ae705b9f89b80ecfbbba57ac2fa5c34e/UML-API-2.PNG)
+![UML-API-2](https://user-images.githubusercontent.com/97975671/182435121-92fc33b2-f785-4878-8e77-ce2adc4fa484.PNG)
 
 ## Banner do Projeto no Spring
 
-![banner_projeto](/uploads/6bc73c10812ac9c73b1002e70e4729fc/banner_projeto.PNG)
+![banner projeto](https://user-images.githubusercontent.com/97975671/182434980-dffde29e-2501-46cc-a787-adfd50973a3b.PNG)
 
 ## Imagens Swagger e Postman (alguns cruds)
 
-![Swagger_projeto](/uploads/5cab4920ddb4628d85ac0dc6c72e013c/Swagger_projeto.PNG)
+![Swagger projeto](https://user-images.githubusercontent.com/97975671/182435081-182d6a79-e604-4264-93e4-4df64ed4ba2b.PNG)
 
-<div align="center">
-<img src="/uploads/433195c4c2defc8c5c89fc8817d47d67/Postman_Projeto.PNG" />
-</div>
+< div align = "centro" >
+< img src = "https://user-images.githubusercontent.com/97975671/182435037-f7bc03fb-77bb-4fa9-8895-f9010fee313d.PNG" />
+</ div >
 
-----------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 ## Autor
 Matheus Nascimento
